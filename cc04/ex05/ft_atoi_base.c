@@ -6,12 +6,22 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 17:23:53 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/25 19:19:38 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/31 17:18:46 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
+
+int	ft_isspace(char c)
+{
+	if (!(c == ' ' || c == '\f' || c == '\n'
+			|| c == '\r' || c == '\t' || c == '\v'))
+	{
+		return (0);
+	}
+	return (1);
+}
 
 int	change_base(char *str, char *base)
 {
@@ -52,7 +62,7 @@ int	check_base(char *base)
 	i = 0;
 	while (base[i] != '\0')
 	{
-		if (base[i] == '-' || base[i] == '+')
+		if (base[i] == '-' || base[i] == '+' || base[i] == ' ')
 			return (0);
 		j = i + 1;
 		while (base[j] != '\0')
@@ -73,7 +83,7 @@ int	ft_atoi_base(char *str, char *base)
 
 	if (!check_base(base))
 		return (0);
-	while (isspace(*str))
+	while (ft_isspace(*str))
 	{
 		str++;
 	}
@@ -92,26 +102,26 @@ int	ft_atoi_base(char *str, char *base)
 	return (result);
 }
 
-int main()
-{
-    char binary[] = "1011";
-    char hex[] = "1A";
-    char decimal[] = "123";
-	char poneyvif[] = "opn";
+// int main()
+// {
+//     char binary[] = " ---10000000";
+//     char hex[] = "80";
+//     char decimal[] = "128";
+// 	char poneyvif[] = "npp";
 
-    char binary_base[] = "01";
-    char hex_base[] = "0123456789ABCDEF";
-    char decimal_base[] = "0123456789";
-	char poneyvif_base[] = "poneyvif";
+//     char binary_base[] = "01";
+//     char hex_base[] = "0123456789ABCDEF";
+//     char decimal_base[] = "0123456789";
+// 	char poneyvif_base[] = "poneyvif";
 
-    int binary_result = ft_atoi_base(binary, binary_base);
-    int hex_result = ft_atoi_base(hex, hex_base);
-    int decimal_result = ft_atoi_base(decimal, decimal_base);
-	int poneyvif_result = ft_atoi_base(poneyvif, poneyvif_base);
+//     int binary_result = ft_atoi_base(binary, binary_base);
+//     int hex_result = ft_atoi_base(hex, hex_base);
+//     int decimal_result = ft_atoi_base(decimal, decimal_base);
+// 	int poneyvif_result = ft_atoi_base(poneyvif, poneyvif_base);
 
-    printf("Binary: '%s' integer: %d\n", binary, binary_result);
-    printf("Hexadecimal: '%s' integer: %d\n", hex, hex_result);
-    printf("Decimal: '%s' integer: %d\n", decimal, decimal_result);
-	printf("Poneyvif: '%s' integer: %d\n", poneyvif, poneyvif_result);
-    return (0);
-}
+//     printf("Binary: '%s' integer: %d\n", binary, binary_result);
+//     printf("Hexadecimal: '%s' integer: %d\n", hex, hex_result);
+//     printf("Decimal: '%s' integer: %d\n", decimal, decimal_result);
+// 	printf("Poneyvif: '%s' integer: %d\n", poneyvif, poneyvif_result);
+//     return (0);
+// }

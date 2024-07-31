@@ -14,22 +14,18 @@
 
 int	ft_recursive_factoria(int nb)
 {
-	int	result;
-
-	result = 1;
 	if (nb == 0)
 		return (1);
 	else if (nb > 0)
 	{
-		result = nb * ft_recursive_factoria(nb - 1);
-		return (result);
+		return (nb * ft_recursive_factoria(nb - 1));
 	}
 	return (0);
 }
 
-int	main(void)
-{
-	int	nb = 4;
-	printf("The factorial of %d is %d", nb, ft_recursive_factoria(nb));
-	return (0);
-}
+// int	main(void)
+// {
+// 	int	nb = 5;
+// 	printf("The factorial of %d is %d", nb, ft_recursive_factoria(nb));
+// 	return (0);
+// }

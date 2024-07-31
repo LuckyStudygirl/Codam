@@ -6,7 +6,7 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 20:07:31 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/25 18:26:00 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/30 13:53:45 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,10 @@ int	ft_fibonacci(int index)
 	}
 	return (-1);
 }
-int	main(void)
-{
-	int x = 0;
-	printf("The fibonacci of %d is %d", x, ft_fibonacci(x));
-	return (0);
-}
+
+// int	main(void)
+// {
+// 	int x = 5;
+// 	printf("The fibonacci of %d is %d", x, ft_fibonacci(x));
+// 	return (0);
+// }

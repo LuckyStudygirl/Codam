@@ -6,7 +6,7 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 18:05:22 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/23 17:39:09 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/29 17:24:25 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,10 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 		i++;
 	}
 	while (i < n)
+	{
 		dest[i] = '\0';
+		i++;
+	}
 	return (dest);
 }
 

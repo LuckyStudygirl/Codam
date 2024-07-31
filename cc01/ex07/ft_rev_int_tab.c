@@ -6,14 +6,13 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 13:03:16 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/18 11:38:19 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/25 20:16:13 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_rev_int_tab(int *tab, int size)
 {
 	int	i;
-	int	j;
 	int	temp;
 
 	i = 0;
@@ -24,7 +23,6 @@ void	ft_rev_int_tab(int *tab, int size)
 		tab[size - 1 - i] = temp;
 		i++;
 	}
-	j = 0;
 }
 /*
 int	main(void)

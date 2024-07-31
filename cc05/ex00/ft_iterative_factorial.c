@@ -6,7 +6,7 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 18:00:22 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/20 18:24:48 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/30 13:40:21 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,16 @@ int	ft_iterative_factorial(int nb)
 	{
 		return (0);
 	}
-	while(nb > 1)
+	while (nb > 1)
 	{
 		result *= (nb--);
 	}
 	return (result);
 }
 
-int	main(void)
-{
-	int	nb = 10;
-	printf("The factorial of %d is %d\n", nb, ft_iterative_factorial(nb));
-	return (0);
-}
+// int	main(void)
+// {
+// 	int	nb = 0;
+// 	printf("The factorial of %d is %d\n", nb, ft_iterative_factorial(nb));
+// 	return (0);
+// }

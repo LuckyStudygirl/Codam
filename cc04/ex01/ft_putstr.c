@@ -6,7 +6,7 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 15:55:48 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/25 17:43:17 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/29 12:33:48 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	ft_putstr(char *str)
 	}
 }
 
-int	main(void)
-{
-	ft_putstr("You're wizard Harry!");
-	return (0);
-}
+// int	main(void)
+// {
+// 	ft_putstr("You're wizard Harry!");
+// 	return (0);
+// }

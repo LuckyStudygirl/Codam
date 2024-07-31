@@ -6,7 +6,7 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/16 15:20:48 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/18 11:24:52 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/25 20:20:48 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void	ft_sort_int_tab(int *tab, int size)
 		i++;
 	}
 }
-/*
+
 int	main(void)
 {
 	int	size;
@@ -48,4 +48,4 @@ int	main(void)
 	ft_sort_int_tab(array, size);
 	return (0);
 }
-*/
+

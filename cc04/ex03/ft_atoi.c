@@ -6,19 +6,31 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/20 13:29:41 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/25 18:15:48 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/29 13:22:18 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
 
+int	ft_isspace(char c)
+{
+	if (!(c == ' ' || c == '\f' || c == '\n'
+			|| c == '\r' || c == '\t' || c == '\v'))
+	{
+		return (0);
+	}
+	return (1);
+}
+
 int	ft_atoi(char *str)
 {
 	int	sign;
 	int	result;
 
-	while (isspace(*str))
+	if (*str == '\0')
+		return (0);
+	while (ft_isspace(*str))
 	{
 		str++;
 	}
@@ -40,11 +52,11 @@ int	ft_atoi(char *str)
 	return (result * sign);
 }
 
-int	main(void)
-{
-	char	*str;
+// int	main(void)
+// {
+// 	char	*str;
 
-	str = "          --+-++---239409u84";
-	printf("%d\n", ft_atoi(str));
-	return (0);
-}
+// 	str = "            +--++-+2147483648";
+// 	printf("%d\n", ft_atoi(str));
+// 	return (0);
+// }

@@ -6,7 +6,7 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/25 15:48:33 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/25 15:55:36 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/29 12:33:53 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_strlen(char *str)
 
 // int	main(void)
 // {
-// 	char *str = "Willy Wonka's Chocolate Factory";
+// 	char str[] = "Willy Wonka's Chocolate Factory";
 // 	printf("'%str' has %d characters!", str, ft_strlen(str));
 // 	return (0);
 // }

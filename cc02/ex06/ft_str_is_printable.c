@@ -6,11 +6,11 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 16:18:50 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/23 12:55:16 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/30 15:11:40 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
 
 int	ft_str_is_printable(char *str)
 {
@@ -30,7 +30,7 @@ int	ft_str_is_printable(char *str)
 
 // int	main(void)
 // {
-// 	char	str1[] = "Hello, World!";
+// 	char	str1[] = "Hello World!";
 // 	char	str2[] = "Hello\nWorld";
 // 	char	str3[] = "Printable123";
 // 	char	str4[] = "";

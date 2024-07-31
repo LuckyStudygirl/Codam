@@ -6,20 +6,22 @@
 /*   By: tnayir <tnayir@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 19:48:07 by tnayir            #+#    #+#             */
-/*   Updated: 2024/07/18 11:23:32 by tnayir           ###   ########.fr       */
+/*   Updated: 2024/07/25 20:13:11 by tnayir           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
-/*
+
 int	main(void)
 {
 	int	nbr;
 
 	ft_ft(&nbr);
+	printf("%d", nbr);
 	return (0);
 }
-*/
+
