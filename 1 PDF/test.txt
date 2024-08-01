@@ -1,0 +1,35 @@
+#include <unistd.h>
+
+void	put_nbr(int nbr)
+{
+	char c;
+
+	if (nbr != 0)
+		put_nbr(nbr / 10);
+	c = nbr1 % 10 + '0';
+	write(1, &c, 1);
+}
+void	ft_print_comb2(void)
+{
+	int	nbr1;
+	int nbr2;
+
+	nbr1 = 0;
+	while(nbr1 < 98)
+	{
+		nbr2 = nbr1 + 1;
+		while(nbr2 < 99)
+		{
+			put_nbr(nbr1);
+			write(1, )
+			nbr2++;
+		}
+		nbr1++;
+	}
+}
+
+int main(void)
+{
+	ft_print_comb2();
+	return (0);
+}
