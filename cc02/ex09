@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+// Manual implementation of isalnum function
+int isalnum_manual(char c) {
+    if ((c >= '0' && c <= '9') || (c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')) {
+        return 1;
+    }
+    return 0;
+}
+
+char *ft_strcapitalize(char *str) {
+    int i = 0;
+    int is_new_word = 1;  // Initialize flag to indicate the start of a new word
+
+    while (str[i] != '\0') {
+        if (isalnum_manual(str[i])) {  // Use the manual isalnum function
+            if (is_new_word && (str[i] >= 'a' && str[i] <= 'z')) {  // If it's a new word and the character is lowercase
+                str[i] = str[i] - ('a' - 'A');  // Capitalize it
+            } else if (!is_new_word && (str[i] >= 'A' && str[i] <= 'Z')) {  // If it's not a new word and the character is uppercase
+                str[i] = str[i] + ('a' - 'A');  // Convert to lowercase
+            }
+            is_new_word = 0;  // Set flag to indicate we're in the middle of a word
+        } else {
+            is_new_word = 1;  // Set flag to indicate the next alphanumeric character will be the start of a new word
+        }
+        i++;
+    }
+
+    return str;
+}
+
+int main() {
+    char str1[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+    printf("%s\n", ft_strcapitalize(str1));
+
+    return 0;
+}
