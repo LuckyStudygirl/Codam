@@ -34,7 +34,6 @@ void	ft_print_comb2(void)
 			str[2] = ' ';
 			str[3] = (second / 10) + '0';
 			str[4] = (second % 10) + '0';
-			str[5] = '\0';
 			str_to_char(str);
 			if (first != 98 || second != 99)
 			{
