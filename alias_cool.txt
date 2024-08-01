@@ -1,0 +1,5 @@
+alias comp='cc -Wall -Wextra -Werror'
+alias norm="norminette -oR CheckForbiddenSourceHeader"
+alias parrot="gnome-terminal -t brainrot --zoom 0,3 -- curl parrot.live"
+alias goblinmode='while true; do echo "\e[38;2;$((1+RANDOM%256));$((1+RANDOM%256));$((1+RANDOM%256))mThe shell goblin was here! \e[0m"; sleep 0,03; done'
+
